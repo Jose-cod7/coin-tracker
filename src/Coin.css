@@ -1,0 +1,160 @@
+.coin.container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /*** Fix the position and sticked***/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /*******/
+  border-bottom: 1px solid #d7d7d7;
+  justify-items: center;
+  background-color: #5b5b5e;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 1050px;
+  height: 40px;
+}
+
+.info-name {
+  width: 19%;
+}
+
+.info-price {
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+.info-volume {
+  padding-left: 20px;
+}
+
+.info-change {
+  text-align: center;
+  width: 10%;
+}
+
+.info-name > p,
+.info-price,
+.info-volume,
+.info-change,
+.info-market,
+.question {
+  background-color: #5b5b5e;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+  justify-content: center;
+  margin-top: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+}
+
+.footer,
+.autor {
+  background-color: rgb(60, 58, 70);
+}
+
+/****   Coin style  *****/
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+
+  width: 1050px;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  min-width: 300px;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin-price {
+  width: 100px;
+}
+
+.coin-volume {
+  width: 140px;
+}
+
+.coin-market {
+  width: 200px;
+}
+
+.coin-percent {
+  width: 80px;
+  padding-left: 25px;
+}
+
+.red,
+.down {
+  color: #f00606;
+}
+
+.green,
+.up {
+  color: #11d811;
+}
+
+/* Use fa-fw to set icons at a fixed width. Great to use when different icon widths throw off alignment. */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  word-spacing: 5px;
+  background-color: rgb(223, 219, 219);
+  color: rgb(15, 15, 15);
+  text-align: justify;
+
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin-top: 20px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
